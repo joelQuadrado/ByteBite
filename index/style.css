@@ -1,0 +1,187 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #2C2C2C;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #F8F1E9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #27AE60;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #F8F1E9;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* BOTÃO */
+.btn {
+    background-color: #C0392B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #27AE60;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+}
+
+.hero p {
+    color: rgb(0, 0, 0);
+    margin: 15px 0;
+}
+
+/* DESTAQUES */
+.destaque {
+    margin-top: 40px;
+}
+
+.destaque h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #F8F1E9;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+/* SOBRE */
+.sobre {
+    margin-top: 40px;
+    padding: 40px 0;
+    background: #F8F1E9;
+}
+
+.sobre h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
