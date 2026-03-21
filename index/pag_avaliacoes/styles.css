@@ -1,0 +1,21 @@
+/* 1. Aplicar ao corpo todo da página */
+body {
+    background-color: #F8F1E9; /* O bege claro da regra 1 */
+    font-family: 'Roboto', sans-serif; /* A fonte para texto normal */
+    color: #2C2C2C; /* Preto suave para leitura */
+}
+
+/* 2. Configurar os títulos com a fonte elegante */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #C0392B; /* Vermelho tomate da pizzaria */
+}
+
+.card-review {
+    background-color: #FFFFFF; /* Branco para destacar do fundo bege */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço entre cartões */
+    border-radius: 8px; /* Cantos arredondados (Regra 7) */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra leve (Regra 7) */
+    border: none; /* Tirar bordas padrão se existirem */
+}
