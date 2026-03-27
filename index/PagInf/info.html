@@ -18,7 +18,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            
+            <div class="logo">
+                <img src="img/logo.png" alt="ByteBite Logo">
+                <h2>ByteBite</h2>
+            </div>
 
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Pizzas</a></li>
+                            <li><a href="#">Pizzas</a></li>
+                            <li><a href="#">Pizzas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn">Reservar</button>
+
+        </div>
+    </header>
+<button onclick="mudarIdioma('pt')">PT</button>
+<button onclick="mudarIdioma('en')">EN</button>
 <section id="about" class="secao-sobre py-5">
     <div class="container">
         <h2 class="titulo-secao text-center mb-5">Sobre a ByteBite</h2>
