@@ -1,21 +1,108 @@
-/* 1. Aplicar ao corpo todo da página */
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #F8F1E9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 40px; /* Esta é a linha que falta aplicar! */
+    height: auto; /* Garante que a imagem não distorce */
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #27AE60;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #F8F1E9;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none;
+    }
+    }
+
+
 body {
     background-color: #F8F1E9; /* O bege claro da regra 1 */
     font-family: 'Roboto', sans-serif; /* A fonte para texto normal */
     color: #2C2C2C; /* Preto suave para leitura */
 }
 
-/* 2. Configurar os títulos com a fonte elegante */
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #C0392B; /* Vermelho tomate da pizzaria */
 }
 
 .card-review {
-    background-color: #FFFFFF; /* Branco para destacar do fundo bege */
+    background-color: #FFFFFF; 
     padding: 20px;
     margin-bottom: 20px; /* Espaço entre cartões */
-    border-radius: 8px; /* Cantos arredondados (Regra 7) */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra leve (Regra 7) */
-    border: none; /* Tirar bordas padrão se existirem */
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    border: none; 
+} 
+.btn-pizzaria {
+    background-color: #C0392B; /* Vermelho Tomate  */
+    color: white;             /* Texto branco */
+    border-radius: 8px;       /* Arredondado  */
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    transition: 0.3s;         /* Faz a mudança de cor ser suave */
+}
+
+/* O efeito de passar o rato  */
+.btn-pizzaria:hover {
+    background-color: #27AE60; /* Verde Manjericão */
+    color: white;
+}
+
+/* Quando o utilizador clica na caixa de texto (foco) */
+.form-control:focus {
+    border-color: #C0392B; /* Vermelho Pizzaria */
+    box-shadow: 0 0 0 0.25rem rgba(192, 57, 43, 0.25); /* Um brilho vermelho transparente */
 }

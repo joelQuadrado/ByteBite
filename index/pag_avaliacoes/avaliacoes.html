@@ -10,11 +10,37 @@
 </head>
 <body>
 
-    <header>
-        <h1>Avaliações dos nossos Clientes</h1>
+    <header class="navbar">
+        <div class="container nav-content">
+            
+            <div class="logo">
+                <img src="img/logo.png" alt="ByteBite Logo">
+                <h2>ByteBite</h2>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Pizzas</a></li>
+                            <li><a href="#">Pizzas</a></li>
+                            <li><a href="#">Pizzas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn">Reservar</button>
+
+        </div>
     </header>
 
-    <main class="container py-5">
+
+    <main class="container py-5" style="margin-top: 80px;">
 
         <section id="lista-criticas" class="mb-5">
             <h2>O que dizem de nós</h2> <br>
@@ -29,31 +55,31 @@
             <article class="card-review">
                 <h3>Sofia Matos</h3>
                 <p class="rating">⭐⭐⭐⭐</p>
-                <p class="texto-review">"Gostei muito do ambiente. A Taylor Swift escusava de estar em todas as playlist do restaurante"</p>
+                <p class="texto-review">"Comida boa. Gostei muito do ambiente. A Taylor Swift escusava de estar em todas as playlist do restaurante"</p>
                 <small>Publicado em: 10/03/2026</small>
              </article>
         </section>
             <hr class="my-5">
 
-        <section id="formulario-avaliacao">
-            <h2>Deixe a sua opinião</h2>
+        <section id="formulario-avaliacao" class="card shadow-sm p-4 mb-5">
+            <h2 class="text-center mb-4">Deixe a sua opinião</h2>
             <form> 
                 <div>
                     <label for="nome">Nome do Cliente:</label><br>
-                    <input type="text" id="nome" name="nome" placeholder="O seu nome completo" required>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Introduza o seu nome" required>
                 </div><br>
 
                 <div>
                     <label for="Avaliação">Nota (1 a 5):</label><br>
-                    <input type="Number" id="avaliacao" name="avaliacao" placeholder="Avalie a sua experiência" required>
+                    <input type="Number" class="form-control" id="avaliacao" name="avaliacao" placeholder="Avalie a sua experiência" required>
                 </div><br>
 
                 <div>
                      <label for="comentario">A sua opinião:</label><br>
-                    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Conte-nos a sua experiência..."></textarea>
+                    <textarea id="comentario" class="form-control" name="comentario" rows="4" cols="50" placeholder="Conte-nos a sua experiência..."></textarea>
                 </div><br>
 
-                <button type="submit">Enviar Avaliação</button>
+                <button type="submit" class="btn btn-pizzaria w-100" >Enviar Avaliação</button>
             </form>
         </section>
 
