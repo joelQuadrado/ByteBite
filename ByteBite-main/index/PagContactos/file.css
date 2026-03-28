@@ -1,0 +1,186 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #2C2C2C;
+}
+
+/* TITULOS */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #F8F1E9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* MENU */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+/* BOTÃO */
+.btn {
+    background-color: #C0392B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #27AE60;
+}
+
+/* SEÇÕES */
+section {
+    margin-top: 40px;
+}
+
+/* MAPA */
+.mapa iframe {
+    border-radius: 10px;
+}
+
+/* CONTAINER DAS DUAS SEÇÕES */
+.contactos,
+.mapa {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* WRAPPER FLEX (truque sem mudar HTML) */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CRIAR LAYOUT LADO A LADO */
+.mapa,
+.contactos {
+    width: 100%;
+}
+
+/* AGRUPAR VISUALMENTE */
+section.mapa,
+section.contactos {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+/* ESPAÇO ENTRE */
+section.mapa {
+    margin-right: 2%;
+}
+
+/* CONTACTOS ESTILO */
+.contactos {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* MAPA */
+.mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+/* WRAPPER AUTOMÁTICO (truque) */
+.contactos,
+.mapa {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CRIAR LAYOUT LADO A LADO */
+.contactos {
+    order: 2;
+}
+
+.mapa {
+    order: 1;
+}
+
+/* AGRUPAR VISUALMENTE */
+.contactos,
+.mapa {
+    width: 50%;
+    float: left;
+}
+
+/* LIMPAR FLOAT */
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ESTILO CONTACTOS */
+.contactos {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* MAPA */
+.mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    section.mapa,
+    section.contactos {
+        width: 100%;
+        margin-right: 0;
+    }
+}
