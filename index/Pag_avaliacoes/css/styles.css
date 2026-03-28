@@ -1,0 +1,218 @@
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #F8F1E9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto; /* Garante que a imagem não distorce */
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #27AE60;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #F8F1E9;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none;
+    }
+    }
+
+
+body {
+    background-color: #F8F1E9; /* O bege claro da regra 1 */
+    font-family: 'Roboto', sans-serif; /* A fonte para texto normal */
+    color: #2C2C2C; /* Preto suave para leitura */
+}
+
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #C0392B; /* Vermelho tomate da pizzaria */
+}
+
+.card-review {
+    background-color: #FFFFFF;    /* Branco (Regra 1) */
+    border-radius: 8px;           /* Arredondado (Regra 7) */
+    padding: 30px 20px;           /* Mais espaço para respirar (Regra 5) */
+    text-align: center;           /* Centralizado como na inspiração */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave (Regra 7) */
+    border: 1px solid rgba(0,0,0,0.05); 
+    
+    /* Mágica para alinhar tudo igual */
+    display: flex;
+    flex-direction: column;
+    height: 100%;                 
+    transition: all 0.3s ease;    
+}
+
+/* Efeito ao passar o rato */
+.card-review:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-review h3 {
+    font-family: 'Playfair Display', serif; /* (Regra 2) */
+    font-size: 22px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.texto-review {
+    font-family: 'Roboto', sans-serif; /* (Regra 2) */
+    color: #7F8C8D;               /* Texto secundário (Regra 1) */
+    font-style: italic;
+    line-height: 1.6;
+    flex-grow: 1;                 /* Empurra a data para o fim */
+    margin-bottom: 20px;
+}
+
+.card-review small {
+    font-weight: bold;
+    color: #bdc3c7;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+.btn-pizzaria {
+    background-color: #C0392B; /* Vermelho Tomate  */
+    color: white;             /* Texto branco */
+    border-radius: 8px;       /* Arredondado  */
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    transition: 0.3s;         /* Faz a mudança de cor ser suave */
+}
+
+/* O efeito de passar o rato  */
+.btn-pizzaria:hover {
+    background-color: #27AE60; /* Verde Manjericão */
+    color: white;
+}
+
+/* Quando o utilizador clica na caixa de texto (foco) */
+.form-control:focus {
+    border-color: #C0392B; /* Vermelho Pizzaria */
+    box-shadow: 0 0 0 0.25rem rgba(192, 57, 43, 0.25); /* Um brilho vermelho transparente */
+}
+
+
+
+/* =========================================
+   HERO - CORREÇÃO DE POSIÇÃO E PESO DA FONTE
+   ========================================= */
+
+#hero-avaliacoes {
+    height: 45vh;
+    /* Unificamos o gradiente suave diretamente com a imagem */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), #F8F1E9), url('../img/pizza_forno.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 80px;
+
+    /* TÉCNICA À BRUTA PARA DESCER O TEXTO: */
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end; /* Empurra o conteúdo para a base da div */
+    align-items: center;
+    
+    /* AJUSTE AQUI: O padding-top empurra o texto para baixo de forma forçada */
+    padding-top: 250px; 
+    padding-bottom: 20px; /* Distância da frase para o fim da imagem */
+}
+
+.hero-overlay {
+    background: transparent !important; /* Mata o quadrado cinzento de vez */
+    box-shadow: none !important;
+    text-align: center;
+    width: 100%;
+}
+
+#hero-avaliacoes h1 {
+    font-family: 'Playfair Display', serif; /* (Regra 2) */
+    font-size: 56px; /* Aumentámos para impacto */
+    color: #C0392B;  /* Vermelho Pizzaria */
+    
+    /* O SEGREDO DO "NEGRITO": Sombra branca difusa para dar peso e legibilidade */
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 2px 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 0;
+    
+    /* ADICIONADO: Dá o peso visual que tinhas antes */
+    font-weight: 800; 
+}
+
+#hero-avaliacoes p {
+    font-family: 'Roboto', sans-serif; /* (Regra 2) */
+    color: #2C2C2C;               /* Preto suave (Regra 1) */
+    font-size: 1.2rem;
+    
+    /* ADICIONADO: Dá o peso visual para a frase de baixo */
+    font-weight: 600; 
+}
+
+#lista-criticas {
+    /* Aumentamos para -100px para teres a certeza que ele se mexe */
+    margin-top: -100px !important; 
+    
+    /* O relative é obrigatório para o z-index funcionar */
+    position: relative !important; 
+    z-index: 99 !important; 
+    
+    /* Garante que não há padding no topo a empurrar os cards para baixo */
+    padding-top: 0 !important;
+}

@@ -63,20 +63,6 @@ body {
     color: #27AE60;
 }
 
-/* DROPDOWN */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #F8F1E9;
-    list-style: none;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 /* BOTÃO */
 .btn {
@@ -95,7 +81,10 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('hero.jpg') center/cover no-repeat;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('img/logo.png') center/contain no-repeat;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,16 +92,38 @@ body {
     margin-top: 80px;
 }
 
-.hero h1 {
+/* SLIDER */
+.slider {
+    margin-top: 10px;
+    overflow: hidden;
+    width: max-content;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    gap: 50px;
+    animation: slide 20s infinite;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/*.hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
+    font-size: 100px;
     color: rgb(0, 0, 0);
 }
 
 .hero p {
     color: rgb(0, 0, 0);
     margin: 15px 0;
-}
+} */
 
 /* DESTAQUES */
 .destaque {
