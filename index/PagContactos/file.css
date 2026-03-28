@@ -70,20 +70,6 @@ body {
     color: #27AE60;
 }
 
-/* DROPDOWN */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #F8F1E9;
-    list-style: none;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 /* BOTÃO */
 .btn {
@@ -169,11 +155,12 @@ body {
 /* Section Title */
 .section-title {
   font-family: 'Playfair Display', serif;
+  margin-top: 50px;
   font-size: 42px;
   font-weight: 700;
   color: var(--soft-black);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .section-title::after {
@@ -188,7 +175,7 @@ body {
 
 /* About Section */
 .about-section {
-  background-color: var(--white;
+  background-color: var(--
 }
 
 .about-paragraph {
@@ -525,12 +512,12 @@ body {
 /* Contact Page Styles */
 .contact-page-section {
   margin-top: 70px;
-  background-color: var(--background-beige);
+  background-color: var(--background-beige)!important;
   min-height: calc(100vh - 140px);
 }
 
 .contact-info-card {
-  background-color: var(--white);
+  background-color: var(--background-beige)!important;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

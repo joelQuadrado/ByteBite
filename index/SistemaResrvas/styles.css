@@ -1,22 +1,16 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* BASE */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    color: #2C2C2C;
-}
-
-/* CONTAINER */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+/* CORES */
+:root {
+  --primary: #C0392B;
+  --secondary: #27AE60;
+  --bg: #F8F1E9;
+  --text: #2C3E50;
 }
 
 /* NAVBAR */
@@ -63,20 +57,6 @@ body {
     color: #27AE60;
 }
 
-/* DROPDOWN */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #F8F1E9;
-    list-style: none;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 /* BOTÃO */
 .btn {
@@ -90,21 +70,6 @@ body {
 
 .btn:hover {
     background-color: #27AE60;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* CORES */
-:root {
-  --primary: #C0392B;
-  --secondary: #27AE60;
-  --bg: #F8F1E9;
-  --text: #2C3E50;
 }
 
 /* BODY */
@@ -151,36 +116,39 @@ body {
 .hero {
   position: relative;
   height: 80vh;
-  background: url('Imagens/logo.png') center center / contain no-repeat;
+  background: url('img/logo\ \(1\).png') center center / contain no-repeat;
   background-color: #F8F1E9; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
-  color: white;
+  color: rgba(29, 70, 50);
 }
 
 .hero-overlay {
   position: absolute;
   width: 100%;
-  height: 80%;
-  background: rgba(0,0,0,0.4);
+  height:100%;
+  background: white(0,0,0,0.4);
 }
 
 .hero-content {
   position: relative;
   max-width: 600px;
   z-index: 2;
+  margin-bottom: -5px;
 }
 
 .hero h1 {
-  font-size: 50px;
-  margin: 20px 0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  font-size: 60px;
+  margin: 40px ;
+  text-shadow: none;
 }
 
 .hero p {
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+  font-size: 25px;
+  text-align: justify;
+  text-shadow: none;
 }
 .badge {
   background: var(--primary);
@@ -197,18 +165,19 @@ body {
 }
 
 .booking-card {
-  background: white;
+  background: whitesmoke;
   padding: 30px;
   border-radius: 15px;
   width: 400px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
+  margin-top: 10vh;
 }
 
 .top-bar {
   height: 5px;
   background: var(--primary);
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
   margin-bottom: 20px;
 }
 
@@ -285,14 +254,4 @@ body {
 .card h3 {
   margin: 10px 0;
   color: var(--primary);
-}
-
-
-/* FOOTER */
-.footer {
-    background: #2C2C2C;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
 }
